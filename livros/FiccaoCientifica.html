@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficção Científica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0D3B66;
+            background-image: linear-gradient(#0D3B66, #114B88, #0D3B66);
+            color: #FAF0CA;
+            font-family: "Sekuya", system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+            color: #FAF0CA;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .container-livros {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #FAF0CA;
+            color: #0D3B66;
+            width: 190px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-family: "Smooch Sans", sans-serif;
+            font-size: 22px;
+            line-height: 1.3;
+            opacity: 0;
+            max-height: 0;
+            transition: 0.4s;
+            overflow: hidden;
+        }
+
+        .card:hover .desc {
+            opacity: 1;
+            max-height: 300px;
+            margin-top: 10px;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .saiba {
+            color: #0D3B66;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body link="#0D3B66" alink="#05213b" vlink="#0D3B66">
+    <h1>—— Ficção Científica ——</h1>
+    <div class="container-livros">
+        <div class="card">
+            <div class="titulo">Maze Runner</div>
+            <div class="autor">James Dashner</div> <br> <img src="MazeRunner.jpg">
+            <div class="desc"> Um grupo de jovens precisa sobreviver em um labirinto mortal e desvendar segredos de uma
+                organização misteriosa. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=maze+runner+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=VuI5aeqtDuuY1sQP672v-Qg&oq=maze+runner+li&gs_lp=Egxnd3Mtd2l6LXNlcnAiDm1hemUgcnVubmVyIGxpKgIIADILEAAYgAQYsQMYgwEyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI3RZQiQhYrw9wAXgBkAEAmAFyoAHTAqoBAzAuM7gBAcgBAPgBAZgCBKACmgPCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICDhAAGLADGOQCGNYE2AEBwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICCxAuGIAEGLEDGIMBmAMAiAYBkAYSugYGCAEQARgJkgcDMS4zoAfGJLIHAzAuM7gHkQPCBwcyLTEuMS4yyAc9gAgA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Percy Jackson</div>
+            <div class="autor">Rick Riordan</div> <br> <img src="Percy.jpg">
+            <div class="desc"> Aventuras modernas com deuses gregos, criaturas míticas e heróis enfrentando um destino
+                maior do que imaginam. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=percy+jackson+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=XeI5aYytE6XP1sQPwfnX0QM&oq=perc+livros&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3BlcmMgbGl2cm9zKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSPpKUJkFWL1AcAF4AZABAJgBiwGgAbUNqgEEMC4xNLgBA8gBAPgBAZgCB6ACwwbCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICDhAAGLADGOQCGNYE2AEBwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICDRAAGIAEGLEDGIMBGA3CAgcQABiABBgNwgIKEAAYgAQYQxiKBcICEBAAGIAEGLEDGEMYgwEYigXCAg0QABiABBixAxhDGIoFwgIFEAAYgATCAggQABiABBixA8ICChAAGIAEGLEDGA2YAwCIBgGQBhO6BgYIARABGAmSBwMxLjagB6BisgcDMC42uAe5BsIHBTItMS42yAdagAgA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Jogos Vorazes</div>
+            <div class="autor">Suzanne Collins</div> <br> <img src="jogos-vorazes.webp">
+            <div class="desc"> Em um futuro distópico, jovens são forçados a lutar até a morte em um reality show
+                brutal. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=saga+jogos+vorazes+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=Y-Q5aZWEEf7V1sQPoZntuAM&oq=saga&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHNhZ2EqAggAMgoQABiABBhDGIoFMgoQLhiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQLhiABDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIIEC4YgAQYsQMyCBAAGIAEGLEDMgUQLhiABEjiJVDjA1iJGnACeAGQAQOYAZQBoAGKE6oBBDAuMjC4AQPIAQD4AQGYAgmgAp4IqAIUwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICExAuGIAEGLADGEMYyAMYigXYAQHCAg0QLhiABBixAxhDGIoFwgIFEAAYgATCAhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGOAE2AEBwgIWEC4YgAQYQxi0AhjnBhiKBRjqAtgBAsICFhAAGIAEGEMYtAIY5wYYigUY6gLYAQLCAhgQABiABBhDGLQCGOcGGIoFGOoCGArYAQLCAiAQABiABBi0AhjUAxjlAhjnBhi3AxiKBRjqAhiKA9gBAsICIBAuGIAEGLQCGNQDGOUCGOcGGLcDGIoFGOoCGIoD2AECwgIQEAAYAxi0AhjqAhiPAdgBAcICEBAuGAMYtAIY6gIYjwHYAQHCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgILEAAYgAQYsQMYgwHCAhkQLhiABBhDGIoFGJcFGNwEGN4EGN8E2AEBwgIQEC4YgAQY0QMYQxjHARiKBZgDFvEFO6qj9_CmknmIBgGQBhO6BgYIARABGAm6BgQIAhgHkgcDMi43oAfrpQKyBwMwLje4B_8HwgcHMi0yLjUuMsgHhwGACAA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Duna</div>
+            <div class="autor">Frank Herbert</div> <br> <img src="Duna.jpg">
+            <div class="desc"> Intrigas políticas e batalhas épicas em um planeta desértico onde uma substância rara
+                define o destino do universo. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=saga+Duna+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=keQ5ab-iKP3S1sQP5Lew4AM&ved=0ahUKEwj_rr7_-bORAxV9qZUCHeQbDDwQ4dUDCBE&uact=5&oq=saga+Duna+livros&gs_lp=Egxnd3Mtd2l6LXNlcnAiEHNhZ2EgRHVuYSBsaXZyb3MyBRAAGIAEMgYQABgHGB4yBRAAGIAEMggQABgFGAcYHjIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEjKE1DpBFjnEXABeAGQAQCYAakBoAGMBqoBAzAuNrgBA8gBAPgBAZgCBaACoATCAgoQABiwAxjWBBhHwgIHEAAYgAQYDcICCBAAGAcYCBgemAMAiAYBkAYIkgcDMS40oAeuJ7IHAzAuNLgHmgTCBwUyLTEuNMgHOoAIAA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Harry Potter</div>
+            <div class="autor">J.K. Rowling</div> <br> <img src="Harry.jpg">
+            <div class="desc"> Um garoto descobre que é um bruxo e entra em um mundo mágico cheio de mistérios, perigos
+                e conexões profundas. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=saga+harry+potter+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=nuQ5adjKD-vM1sQP8Lr02A8&ved=0ahUKEwjYkb-F-rORAxVrppUCHXAdHfsQ4dUDCBE&uact=5&oq=saga+harry+potter+livros&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHNhZ2EgaGFycnkgcG90dGVyIGxpdnJvczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoiJQxwVYjh9wAXgBkAEAmAG0AaABnAeqAQMwLje4AQPIAQD4AQGYAgegAsAGwgIKEAAYsAMY1gQYR8ICBhAAGAcYHsICBxAAGIAEGA3CAggQABgHGAgYHpgDAIgGAZAGCJIHAzEuNqAH_SuyBwMwLja4B7oGwgcFMi0yLjXIB0SACAA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div> <br><br>
+        <div class="card">
+            <div class="titulo">A 5ª Onda</div>
+            <div class="autor">Rick Yancey</div> <img src="A5°Onda.jpg">
+            <div class="desc"> Após várias ondas de ataques alienígenas devastarem a Terra, uma adolescente luta para
+                sobreviver e encontrar seu irmão. <br> <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=c10fa1f35bad6765&udm=28&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD75Zzpf7Nr8v4hr8rOZhrL53GZEw1YDwfPusr5Oqk12e6GOo0mHb68W2RmSTW2dLiH9mQ5g61YDW1LpqLNjLQfC3yOdvhQLp2f_aDBuXZSusLjVs_fnwm6llJiy_y76s79jeE1Qi796R5O_F4wLkk5_IpcLW88H3teUymvDcSiKVHGa2sA&q=A+5%C2%B0+onda+livros&ved=1t:220175&ictx=111&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Divergente</div>
+            <div class="autor">Veronica Roth</div> <img src="Divergente.jpg">
+            <div class="desc"> Em uma sociedade dividida por facções, uma jovem descobre que não pertence a nenhuma
+                delas — e isso a coloca em perigo. <br> <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=c10fa1f35bad6765&q=divergente+livros&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yAFb4PvhjIUcDtaFHkK_tyqfYVx0lCBcCX38sg5LqgWMbBDpOpi-b87KRYaAlAzJqS8fhcEvEITuB7Pq2wVs_hM6dNKkiJiS1TJrLzhpOGRNY_eMYLN110SaJpewrdhNqN6KgOZ7zsMXCY6CCEciBDddJOzuQ_ltQ6i3IubweMjo1KpbqSS9GwknFS5UZ3s2cxQoG5gF6utBbsiEHZ4Rb6xZM3O0&sa=X&ved=2ahUKEwiuzKzq-rORAxX0qJUCHYfcHw8Q0pQJegQIDhAB&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">A Seleção</div>
+            <div class="autor">Kiera Cass</div> <img src="A seleção.jpg">
+            <div class="desc"> Em um futuro dividido por castas, garotas competem pelo coração de um príncipe — enquanto
+                segredos políticos ameaçam tudo. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=a+sele%C3%A7%C3%A3o+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=cuU5aZ3xJPDM1sQPnr660Qg&oq=a+sele+livros&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWEgc2VsZSBsaXZyb3MqAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5I-yRQkARY_hpwA3gBkAEAmAGLAaAByQ-qAQQwLjE2uAEDyAEA-AEBmAIMoAKiCsICChAAGLADGNYEGEfCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIKEAAYgAQYQxiKBcICEBAAGIAEGLEDGEMYgwEYigXCAggQABgHGAgYHsICBRAAGO8FwgIIEAAYgAQYogSYAwCIBgGQBg26BgQIARgIkgcDMy45oAfia7IHAzAuObgH-QnCBwYyLTEuMTHIB50BgAgA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Legend</div>
+            <div class="autor">Marie Lu</div> <img src="Legend.jpg">
+            <div class="desc"> Dois jovens de mundos opostos se enfrentam em um governo corrupto, até descobrirem que
+                estão ligados por algo maior. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=Legend+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=IuU5aaSIF5_M1sQP0ezcuAI&ved=0ahUKEwikob_E-rORAxUfppUCHVE2FycQ4dUDCBE&uact=5&oq=Legend+livros&gs_lp=Egxnd3Mtd2l6LXNlcnAiDUxlZ2VuZCBsaXZyb3MyCBAAGBMYBxgeMggQABgTGAcYHjIIEAAYExgHGB4yCBAAGBMYBxgeMggQABgTGAcYHjIIEAAYExgHGB4yCBAAGBMYBxgeMggQABgTGAcYHjIIEAAYExgHGB4yCBAAGBMYBxgeSL0ZUMIDWMgWcAF4AZABAJgBfqAB8wqqAQQwLjEyuAEDyAEA-AEBmAIJoAKFCMICChAAGLADGNYEGEfCAggQABiABBiiBMICBhAAGAcYHsICCxAAGIAEGLEDGIMBwgINEAAYgAQYsQMYQxiKBcICChAAGIAEGLEDGA3CAg0QABiABBixAxiDARgNwgIHEAAYgAQYDcICCBAuGBMYBxgemAMAiAYBkAYIkgcDMS44oAflS7IHAzAuOLgH_wfCBwcwLjEuMi42yAdigAgA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+        <div class="card">
+            <div class="titulo">O Orfanato da Srta. Peregrine</div>
+            <div class="autor">Ransom Riggs</div> <img src="OOrfanato.jpg">
+            <div class="desc"> Após uma tragédia, um garoto descobre um lar cheio de crianças com habilidades estranhas
+                e criaturas perigosas à espreita. <br> <a class="saiba"
+                    href="https://www.amazon.com.br/Orfanato-Srta-Peregrine-Crian%C3%A7as-Peculiares/dp/854410455X" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspense</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0D3B66;
+            background-image: linear-gradient(#0D3B66, #114B88, #0D3B66);
+            color: #FAF0CA;
+            font-family: "Sekuya", system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+            color: #FAF0CA;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .container-livros {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #FAF0CA;
+            color: #0D3B66;
+            width: 190px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-family: "Smooch Sans", sans-serif;
+            font-size: 22px;
+            line-height: 1.3;
+            opacity: 0;
+            max-height: 0;
+            transition: 0.4s;
+        }
+
+        .card:hover .desc {
+            opacity: 1;
+            max-height: 300px;
+            margin-top: 10px;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .saiba {
+            color: #0D3B66;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body link="#0D3B66" alink="#114B88" vlink="#0D3B66">
+
+    <h1>—— Suspense ——</h1>
+
+    <div class="container-livros">
+
+        <div class="card">
+            <div class="titulo">Garota Exemplar</div>
+            <div class="autor">Gillian Flynn</div>
+            <br>
+            <img src="GarotaExemplar.jpg">
+            <div class="desc">
+                Um casamento perfeito esconde segredos obscuros, e um desaparecimento abala toda a cidade.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=garota+exemplar+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">O Silêncio dos Inocentes</div>
+            <div class="autor">Thomas Harris</div>
+            <br>
+            <img src="OSilencioDosInocentes.jpg">
+            <div class="desc">
+                Uma jovem agente do FBI busca capturar um serial killer com a ajuda de um assassino canibal.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=o+silencio+dos+inocentes+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">A Garota no Trem</div>
+            <div class="autor">Paula Hawkins</div>
+            <br>
+            <img src="AGarotaNoTrem.jpg">
+            <div class="desc">
+                Uma mulher testemunha algo suspeito durante o trajeto diário de trem e se envolve em um mistério
+                perigoso.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=a+garota+do+trem+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">O Homem de Areia</div>
+            <div class="autor">E.T.A. Hoffmann</div>
+            <br>
+            <img src="OHomemDeAreia.jpg">
+            <div class="desc">
+                Um conto psicológico onde realidade e pesadelo se misturam, explorando medos profundos e obsessões.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=o+homem+de+areia+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">A Casa de Cera</div>
+            <div class="autor">Elizabeth Kostova</div>
+            <br>
+            <img src="ACasaDeCera.jpg">
+            <div class="desc">
+                Uma investigação em uma antiga mansão revela segredos terríveis e acontecimentos misteriosos.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=a+casa+de+cera+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Manual de Assassinato para Boas Garotas</div>
+            <div class="autor">Holly Jackson</div>
+            <br>
+            <img src="Manual.jpg">
+            <div class="desc">
+                Adolescente reabre um caso arquivado e descobre segredos bem mais sujos do que esperava.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=5cf683cda09dde6d&q=manual+de+assassinato+para+boas+meninas+livro&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD75Zzpf7Nr8v4hr8rOZhrL53GZEw1YDwfPusr5Oqk12e6GOo0mHb68W2RmSTW2dLiH9mQ5g61YDW1LpqLNjLQfC3yOdvhQLp2f_aDBuXZSusLjVs_fnwm6llJiy_y76s77LyVmGFvMQ1-OHppYK6ubPamISaMR-wGVX_ScLX-uSCeRz8qfX7AtJt9HyulRpARucmdK8&sa=X&ved=2ahUKEwijwbqBp7SRAxX-qpUCHctDGiAQ0pQJegQICxAB&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Jantar Secreto</div>
+            <div class="autor">Raphael Montes</div>
+            <br>
+            <img src="JantarSecreto.webp">
+            <div class="desc">
+                Jovens sem dinheiro organizam jantares bizarros com um “cardápio” criminoso que sai do controle.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?q=jantar+secreto+livro&sca_esv=5cf683cda09dde6d&biw=1440&bih=773&ei=0hM6aYmfNaSq1sQPgJW1gQ4&oq=jantlivro&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWphbnRsaXZybyoCCAAyBhAAGAcYHjIHEAAYgAQYDTIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5I8x9QmQhYrhFwAXgBkAEAmAGSAaABnwSqAQMwLjS4AQPIAQD4AQGYAgSgAugEwgINEAAYgAQYsQMYgwEYDcICChAuGIAEGLEDGA3CAgoQABiABBixAxgNwgIQEC4YgAQYsQMYgwEYigUYDZgDAIgGAZIHAzAuNKAH4R6yBwMwLjS4B-gEwgcFMy0zLjHIBzuACAA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">O Iluminado</div>
+            <div class="autor">Stephen King</div>
+            <br>
+            <img src="Oiluminado.jpg">
+            <div class="desc">
+                Família isolada num hotel, pai surtando, forças estranhas agindo.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=5cf683cda09dde6d&q=o+iluminado+livro&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD75Zzpf7Nr8v4hr8rOZhrL7meYAQPVe2HFC6sPUwAkVYHs6auNdhthKrtLjHirfVKiL7m5XxpkMJIp5me43MdN_Wzyn8J1Ey2xjoXay9Om__RsrCg9JLV0rWev72tsowM2ngS8-KoBqjWCIEVKgdTDi2gSq_KZMLDGnurX_9HbOECOmL67QxYh9bYlRKANQZYuN7jH8&sa=X&ved=2ahUKEwiawYHWqLSRAxWonpUCHb4IE6cQ0pQJegQIDBAB&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">O Código Da Vinci</div>
+            <div class="autor">Dan Brown</div>
+            <br>
+            <img src="Codigo.jpg">
+            <div class="desc">
+                Professor decifra pistas antigas enquanto corre contra assassinos e conspirações.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=5cf683cda09dde6d&q=o+codigo+da+vinci+livro&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD75Zzpf7Nr8v4hr8rOZhrL53GZEw1YDwfPusr5Oqk12eYVaGKzyahwexRNFFD0f0yryBgTDARG-mYuJw-pkRrAnOeLCvxlhdf2q-5PlnvITy3F44cmov1smfDE60hWtfXQIzsDvpAQE7W0BUr48eOrTaVLZFfJmEdokJPTSiWMpIhrnqvZXYEg8irZDLqq6ED-p-HPQ&sa=X&ved=2ahUKEwiY_fSkqbSRAxVipZUCHReHCHYQ0pQJegQIDxAB&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">A Paciente Silenciosa</div>
+            <div class="autor">Alex Michaelides</div>
+            <br>
+            <img src="APacienteSilenciosa.jpg">
+            <div class="desc">
+                Artista famosa mata o marido e para de falar; terapeuta obcecado tenta descobrir por quê.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=5cf683cda09dde6d&q=a+paciente+silenciosa&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD1x_Yr3ddcQmRX9V0WH2shFGMQhB0NRpWo2Z7qjDC_rF_2Z_GDITy8OaBfyScT_xhhUR8-twgh1XiUaLExI-hTQ7E0QqDQPez8mKaI9uQfHTeF0kRD0lpqDyVDQPQs4Bfv4F0TTBV4v6BznpbCZxysX0pIjayj8B-l9UNnF43HEbXeEW92Cn-BAhh4OMAEm51m5VOgE&sa=X&ved=2ahUKEwjmuK_rqbSRAxXCqpUCHW59Ly4Q0pQJegQIDhAB&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</body>
+
+</html>

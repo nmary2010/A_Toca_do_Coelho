@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0D3B66;
+            background-image: linear-gradient(#0D3B66, #114B88, #0D3B66);
+            color: #FAF0CA;
+            font-family: "Sekuya", system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+            color: #FAF0CA;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .container-livros {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #FAF0CA;
+            color: #0D3B66;
+            width: 190px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-family: "Smooch Sans", sans-serif;
+            font-size: 22px;
+            line-height: 1.3;
+            opacity: 0;
+            max-height: 0;
+            transition: 0.4s;
+        }
+
+        .card:hover .desc {
+            opacity: 1;
+            max-height: 300px;
+            margin-top: 10px;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .saiba {
+            color: #0D3B66;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body link="#0D3B66" alink="#05213b" vlink="#0D3B66">
+
+    <h1>—— Romance ——</h1>
+
+    <div class="container-livros">
+
+        <div class="card">
+            <div class="titulo">Amor & Gelato</div>
+            <div class="autor">Jenna Evans Welch</div>
+            <br>
+            <img src="AmorEGelato.jpg">
+            <div class="desc">Uma viagem para a Itália se transforma numa jornada de amor, segredos e
+                descobertas.<br>
+                <a class="saiba" href="https://www.google.com/search?q=Amor+e+Gelato+livro" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">A Cinco Passos de Você</div>
+            <div class="autor">Rachael Lippincott</div>
+            <br>
+            <img src="A5PassosDeVoce.jpg">
+            <div class="desc">Dois adolescentes lutam entre o amor e a distância obrigatória por causa da saúde.<br>
+                <a class="saiba" href="https://www.google.com/search?q=A+Cinco+Passos+de+Você+livro" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Para Todos os Garotos que Já Amei</div>
+            <div class="autor">Jenny Han</div>
+            <br>
+            <img src="ParaTodosOsGarotos.jpg">
+            <div class="desc">Cartas secretas de amor são enviadas, virando a vida de Lara Jean de cabeça pra
+                baixo.<br>
+                <a class="saiba" href="https://www.google.com/search?q=Para+Todos+os+Garotos+que+Já+Amei+livro" target="_blank">Saiba
+                    mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">A Culpa é das Estrelas</div>
+            <div class="autor">John Green</div>
+            <br>
+            <img src="Estrelas.jpg">
+            <div class="desc">Um romance emocionante sobre amor, perdas e significado.<br>
+                <a class="saiba" href="https://www.google.com/search?q=A+culpa+é+das+estrelas+livro" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Eleanor & Park</div>
+            <div class="autor">Rainbow Rowell</div>
+            <br>
+            <img src="Eleanor.jpg">
+            <div class="desc">Dois jovens improváveis se apaixonam através de música, quadrinhos e
+                vulnerabilidade.<br>
+                <a class="saiba" href="https://www.google.com/search?q=Eleanor+e+Park+livro" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Como Eu Era Antes de Você</div>
+            <div class="autor">Jojo Moyes</div>
+            <br>
+            <img src="ComoeueraAntesdevoce.jpg">
+            <div class="desc">Lou e Will vivem uma relação que transforma a vida dos dois profundamente.<br>
+                <a class="saiba" href="https://www.google.com/search?q=Como+eu+era+antes+de+você+livro" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Melhor do que nos filmes</div>
+            <div class="autor">Lynn Painter</div>
+            <br>
+            <img src="MelhorDoQueNosFilmes.jpg">
+            <div class="desc">Liz tenta conquistar seu amor de infância, mas descobre que o verdadeiro amor é mais
+                surpreendente do que imaginava.<br>
+                <a class="saiba"
+                    href="https://www.google.com/search?q=melhor+que+nos+filmes&sca_esv=443764a366b47e86&biw=1440&bih=773&ei=BAQ6aYzXJvTK1sQPpvGOwQE&gs_ssp=eJzj4tVP1zc0LM4qSTNPScszYPQSzU3NycgvUigsTVXIyy9WSMvMyU0tBgDv3Az3&oq=melhor+que&gs_lp=Egxnd3Mtd2l6LXNlcnAiCm1lbGhvciBxdWUqAggAMgUQLhiABDIFEC4YgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEC4YgAQyBRAuGIAEMgUQABiABDIUEC4YgAQYlwUY3AQY3gQY4ATYAQJI4CxQyAlY0yBwAngBkAEAmAGXAaAB6wmqAQQwLjEwuAEDyAEA-AEBmAINoAL9FqgCFMICFhAuGIAEGEMYtAIY5wYYigUY6gLYAQHCAhYQABiABBhDGLQCGOcGGIoFGOoC2AEBwgIgEC4YgAQYtAIY1AMY5QIY5wYYtwMYigUY6gIYigPYAQHCAiAQABiABBi0AhjUAxjlAhjnBhi3AxiKBRjqAhiKA9gBAcICEBAAGAMYtAIY6gIYjwHYAQLCAhAQLhgDGLQCGOoCGI8B2AECwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGIMBGIoFwgIKEC4YgAQYQxiKBcICDhAuGIAEGLEDGNEDGMcBwgIIEAAYgAQYsQPCAg4QABiABBixAxiDARiKBcICIBAuGIAEGLEDGNEDGIMBGMcBGJcFGNwEGN4EGOAE2AECwgIKEAAYgAQYQxiKBcICCBAuGIAEGLEDwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjgBNgBApgDDPEFchcnjLBKUuC6BgQIARgHugYGCAIQARgKkgcIMi4xMC43LTGgB9uhAbIHBDAuMTC4B58LwgcIMi0yLjEwLjHIB60BgAgA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Anne de Green Gables</div>
+            <div class="autor">L. M. Montgomery</div>
+            <br>
+            <img src="AnneDeGreenGables.jpg">
+            <div class="desc">Anne Shirley, uma órfã sonhadora e falante, vai viver em Green Gables, onde enfrenta
+                confusões e descobre amizade, amor e sua própria força.<br>
+                <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=443764a366b47e86&q=anne+de+green+gables&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD75Zzpf7Nr8v4hr8rOZhrL53GZEw1YDwfPusr5Oqk12e6GOo0mHb68W2RmSTW2dLiH9mQ5g61YDW1LpqLNjLQfC3yOdvhQLp2f_aDBuXZSusLjVs_fnwm6llJiy_y76s77LyVmGFvMQ1-OHppYK6ubPamISaMR-wGVX_ScLX-uSCeRz8qfX7AtJt9HyulRpARucmdK8&sa=X&ved=2ahUKEwibkbbll7SRAxVAq5UCHWtSN50Q0pQJegQIDhAB&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">O Verão que Mudou Minha Vida</div>
+            <div class="autor">Jenny Han</div>
+            <br>
+            <img src="Overaoquemudouminhavida.jpg">
+            <div class="desc">Triângulo amoroso, amadurecimento e verão inesquecível.<br>
+                <a class="saiba" href="https://www.google.com/search?q=O+verão+que+mudou+minha+vida+livro" target="_blank">Saiba
+                    mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Mil Beijos de Garoto</div>
+            <div class="autor">Tillie Cole</div>
+            <br>
+            <img src="Mil.jpg">
+            <div class="desc">Uma história de amor intensa e comovente que atravessa o tempo.<br>
+                <a class="saiba" href="https://www.google.com/search?q=Mil+Beijos+de+Garoto+livro" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+</body>
+
+</html>

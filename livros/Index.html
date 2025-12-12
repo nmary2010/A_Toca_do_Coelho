@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: #FAF0CA;
+            font-family: "Sekuya", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .sekuya-regular {
+            font-family: "Sekuya", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FAF0CA;
+            max-width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .outra-cor {
+            color: #0D3B66;
+        }
+
+        .container-categorias {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        .container-livros {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #FAF0CA;
+            color: #0D3B66;
+            width: 190px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-family: "Smooch Sans", sans-serif;
+            font-size: 22px;
+            line-height: 1.3;
+            opacity: 0;
+            max-height: 0;
+            transition: 0.4s;
+        }
+
+        .card:hover .desc {
+            opacity: 1;
+            max-height: 300px;
+            margin-top: 10px;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .saiba {
+            color: #0D3B66;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body background="Cor.jpeg" link="#0D3B66" alink="#05213b" vlink="#0D3B66">
+    <h1>
+        <center>----- Categorias -----</center>
+    </h1>
+
+    <br><br>
+    <center>
+        <h1>---------------------------------------------------------------------------------------</h1>
+    </center>
+    <br>
+    <div class="container-categorias">
+        <section><span class="outra-cor"><a class="a" href="Romance.html">Romance</a></span></section>
+        <section><span class="outra-cor"><a class="a" href="Fantasia.html">Fantasia</a></span></section>
+        <section><span class="outra-cor"><a class="a" href="Suspense.html">Suspense</a></span></section>
+        <section><span class="outra-cor"><a class="a" href="Mistério.html">Mistério</a></span></section>
+        <section><span class="outra-cor"><a class="a" href="FiccaoCientifica.html">Ficção científica</a></span>
+        </section>
+    </div>
+    <br>
+    <center>
+        <h1>---------------------------------------------------------------------------------------</h1>
+    </center>
+    <center>
+        <h2>3 Recomendações mais populares</h2>
+    </center>
+  <div class="container-livros">
+      <div class="card">
+        <div class="titulo">A Culpa é das Estrelas</div>
+        <div class="autor">John Green</div>
+        <br>
+        <img src="Estrelas.jpg">
+        <div class="desc">Um romance emocionante sobre amor, perdas e significado.<br>
+            <a class="saiba" href="https://www.google.com/search?q=A+culpa+é+das+estrelas+livro" target="_blank">Saiba mais</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="titulo">As Crônicas de Nárnia</div>
+        <div class="autor">C.S. Lewis</div>
+        <br>
+        <img src="AsCronicasDeNarnia.jpg">
+        <div class="desc">
+            Quatro irmãos entram em um mundo mágico governado por um leão sábio e enfrentam grandes aventuras.
+            <br>
+            <a class="saiba" href="https://www.google.com/search?q=as+cronicas+de+narnia+livros" target="_blank">Saiba Mais</a>
+        </div>
+    </div>
+       <div class="card">
+            <div class="titulo">Harry Potter</div>
+            <div class="autor">J.K. Rowling</div> <br> <img src="Harry.jpg">
+            <div class="desc"> Um garoto descobre que é um bruxo e entra em um mundo mágico cheio de mistérios, perigos
+                e conexões profundas. <br> <a class="saiba"
+                    href="https://www.google.com/search?q=saga+harry+potter+livros&sca_esv=c10fa1f35bad6765&biw=1440&bih=773&ei=nuQ5adjKD-vM1sQP8Lr02A8&ved=0ahUKEwjYkb-F-rORAxVrppUCHXAdHfsQ4dUDCBE&uact=5&oq=saga+harry+potter+livros&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHNhZ2EgaGFycnkgcG90dGVyIGxpdnJvczIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IoiJQxwVYjh9wAXgBkAEAmAG0AaABnAeqAQMwLje4AQPIAQD4AQGYAgegAsAGwgIKEAAYsAMY1gQYR8ICBhAAGAcYHsICBxAAGIAEGA3CAggQABgHGAgYHpgDAIgGAZAGCJIHAzEuNqAH_SuyBwMwLja4B7oGwgcFMi0yLjXIB0SACAA&sclient=gws-wiz-serp" target="_blank">Saiba
+                    Mais</a> </div>
+        </div>
+  </div>
+   <center>
+        <h1>---------------------------------------------------------------------------------------</h1>
+    </center>
+    <center><h3>Siga dicas, viva histórias!</h3></center>
+</body>
+
+</html>

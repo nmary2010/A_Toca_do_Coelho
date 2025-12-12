@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0D3B66;
+            background-image: linear-gradient(#0D3B66, #114B88, #0D3B66);
+            color: #FAF0CA;
+            font-family: "Sekuya", system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+            color: #FAF0CA;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .container-livros {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #FAF0CA;
+            color: #0D3B66;
+            width: 190px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-family: "Smooch Sans", sans-serif;
+            font-size: 22px;
+            line-height: 1.3;
+            opacity: 0;
+            max-height: 0;
+            transition: 0.4s;
+        }
+
+        .card:hover .desc {
+            opacity: 1;
+            max-height: 300px;
+            margin-top: 10px;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .saiba {
+            color: #0D3B66;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body link="#0D3B66" alink="#05213b" vlink="#0D3B66">
+
+    <h1>—— Fantasia ——</h1>
+
+    <div class="container-livros">
+
+        <div class="card">
+            <div class="titulo">O Senhor dos Anéis</div>
+            <div class="autor">J.R.R. Tolkien</div>
+            <br>
+            <img src="SenhorDosAneis.webp">
+            <div class="desc">
+                Uma jornada épica para destruir um anel capaz de dominar toda a Terra-média.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=o+senhor+dos+aneis+livros" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Eragon</div>
+            <div class="autor">Christopher Paolini</div>
+            <br>
+            <img src="Eragon.jpg">
+            <div class="desc">
+                Um garoto encontra um ovo de dragão e descobre seu destino como Cavaleiro.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=eragon+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">As Crônicas de Nárnia</div>
+            <div class="autor">C.S. Lewis</div>
+            <br>
+            <img src="AsCronicasDeNarnia.jpg">
+            <div class="desc">
+                Quatro irmãos entram em um mundo mágico governado por um leão sábio e enfrentam grandes aventuras.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=as+cronicas+de+narnia+livros" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">O Nome do Vento</div>
+            <div class="autor">Patrick Rothfuss</div>
+            <br>
+            <img src="ONomeDoVento.jpg">
+            <div class="desc">
+                A vida extraordinária de Kvothe, um jovem talentoso que se torna uma lenda.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=o+nome+do+vento+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Sombra e Ossos</div>
+            <div class="autor">Leigh Bardugo</div>
+            <br>
+            <img src="SombraEOssos.png">
+            <div class="desc">
+                Uma jovem descobre um poder raro que pode salvar — ou destruir — seu reino.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=sombra+e+ossos+livro" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Trono de Vidro</div>
+            <div class="autor">Sarah J. Maas</div>
+            <br>
+            <img src="TronoDeVidro.jpg">
+            <div class="desc">
+                Uma assassina lendária ganha a chance de conquistar sua liberdade enfrentando desafios mortais.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=trono+de+vidro+livros" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">Cidade Dos Etéros</div>
+            <div class="autor">Ransom Riggs</div>
+            <br>
+            <img src="Crianca.jpg">
+            <div class="desc">
+                Um orfanato cheio de crianças com habilidades estranhas e um mistério sombrio por trás delas.
+                <br><br>
+                <a class="saiba" href="https://www.google.com/search?q=o+orfanato+da+srta+peregrine+livro" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">Caraval</div>
+            <div class="autor">Stephanie Garber</div>
+            <br>
+            <img src="Caraval.jpg">
+            <div class="desc">
+                Scarlett finalmente recebe o convite para o Caraval, um jogo mágico onde nada é o que parece.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?q=caraval+livro&oq=caraval+livro&gs_lcrp=EgZjaHJvbWUqDwgAEAAYQxjjAhiABBiKBTIPCAAQABhDGOMCGIAEGIoFMgwIARAuGEMYgAQYigUyBwgCEC4YgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQk0OTQyajBqMTWoAgiwAgHxBSvLNADmx9fR&sourceid=chrome&ie=UTF-8#vhid=kePRnNAiEmqDNM&vssid=_y_45aaWVM-bS1sQP86yf8AQ_47" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">O Hobbit</div>
+            <div class="autor">J.R.R. Tolkien</div>
+            <br>
+            <img src="OHobbit.jpg">
+            <div class="desc">
+                Bilbo Bolseiro, um hobbit pacato, parte em uma aventura cheia de perigos e tesouros, descobrindo coragem
+                e astúcia que não sabia ter
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?q=o+hobbit+livro&sca_esv=443764a366b47e86&ei=cwA6acmaC-XV1sQP0LaayAw&ved=0ahUKEwiJoPbKlLSRAxXlqpUCHVCbBskQ4dUDCBE&uact=5&oq=o+hobbit+livro&gs_lp=Egxnd3Mtd2l6LXNlcnAiDm8gaG9iYml0IGxpdnJvMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIXEC4YgAQYsQMYlwUY3AQY3gQY4ATYAQFI4i5QgA9YqyxwAngBkAEAmAGlAaABsg-qAQQwLjE1uAEDyAEA-AEBmAIMoAK8C8ICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIHEC4YgAQYDcICBxAAGIAEGA3CAhYQLhiABBgNGJcFGNwEGN4EGOAE2AEBwgIKEC4YgAQYQxiKBcICDRAAGIAEGLEDGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgIQEC4YgAQYsQMYQxiDARiKBcICChAAGIAEGEMYigXCAgUQLhiABMICGRAuGIAEGEMYigUYlwUY3AQY3gQY4ATYAQHCAgoQLhiABBixAxgNwgIQEC4YgAQYsQMYgwEYigUYDcICGRAuGIAEGLEDGA0YlwUY3AQY3gQY4ATYAQGYAwCIBgGQBhK6BgYIARABGAmSBwQyLjEwoAexqAGyBwQwLjEwuAeoC8IHBzItMi44LjLIB6cBgAgA&sclient=gws-wiz-serp#vhid=rloEfp2iJHgS_M&vssid=_TAE6aayiFvHR1sQPifGqmQ8_62" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="titulo">A Rainha Vermelha</div>
+            <div class="autor">Victoria Aveyard</div>
+            <br>
+            <img src="ARainhaVermelha.jpg">
+            <div class="desc">
+                Um orfanato cheio de crianças com habilidades estranhas e um mistério sombrio por trás delas.
+                <br><br>
+                <a class="saiba"
+                    href="https://www.google.com/search?sca_esv=443764a366b47e86&q=a+rainha+vermelha+livro&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yRBEFyiFuxYYrR6QBOf_jD75Zzpf7Nr8v4hr8rOZhrL53GZEw1YDwfPusr5Oqk12e6GOo0mHb68W2RmSTW2dLiH9mQ5g61YDW1LpqLNjLQfC3yOdvhQLp2f_aDBuXZSusLjVs_fnwm6llJiy_y76s77LyVmGFvMQ1-OHppYK6ubPamISaMR-wGVX_ScLX-uSCeRz8qfX7AtJt9HyulRpARucmdK8&sa=X&ved=2ahUKEwjjwJPFlrSRAxWrrpUCHWdrBrQQ0pQJegQIDxAB&cshid=1765409527145082&biw=1440&bih=773&dpr=1" target="_blank">Saiba
+                    Mais</a>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+</body>
+
+</html>
