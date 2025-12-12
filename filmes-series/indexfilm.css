@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(45deg, #0D3B66, #6e66f9, #0D3B66, #3778e9);
+    background-size: 400% 400%;
+    animation: bg 10s ease infinite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+@keyframes bg {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.titulo {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: rgb(252, 252, 167);
+    text-shadow: 2px 2px 8px #f2ecb3;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.sub {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(173, 239, 250, 0.636);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.filme {
+    background: rgba(122, 180, 251, 0.418);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000050;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+.filme img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.filme p {
+    margin-top: 8px;
+    font-weight: bold;
+}
+.infos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.estrela {
+    background: #02ccff;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.classificacao {
+    background: #000288;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+}
+.link-canto {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    background: #150b9e98;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.link-canto:hover {
+    background: #6e1283;
+}
